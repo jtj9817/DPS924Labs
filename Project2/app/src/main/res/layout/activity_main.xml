@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josh.project2.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:layout_width="371dp"
+        android:layout_height="501dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="14dp"
+            android:background="#0000ff"
+            android:fontFamily="sans-serif"
+            android:text="Name: Joshua Jadulco"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="#ffff00"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/textViewUN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewName"
+            android:layout_below="@+id/textViewName"
+            android:layout_marginTop="23dp"
+            android:text="Username"
+            android:textColor="#ff66ff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewPW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextUN"
+            android:layout_marginTop="29dp"
+            android:layout_toStartOf="@+id/editTextUN"
+            android:text="Password"
+            android:textColor="#80ff80"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextUN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewUN"
+            android:layout_alignBottom="@+id/textViewUN"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/textViewUN"
+            android:ems="10"
+            android:hint="Enter Username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextPW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editTextUN"
+            android:layout_alignTop="@+id/textViewPW"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/bttnUN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewPW"
+            android:layout_below="@+id/editTextPW"
+            android:layout_marginTop="21dp"
+            android:text="USERNAME"
+            android:textColor="#ff0000" />
+
+        <Button
+            android:id="@+id/bttnPW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bttnUN"
+            android:layout_below="@+id/bttnUN"
+            android:layout_marginTop="24dp"
+            android:text="PASSWORD"
+            android:textColor="#ff0000" />
+
+        <Button
+            android:id="@+id/bttnLGN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bttnPW"
+            android:layout_below="@+id/bttnPW"
+            android:layout_marginTop="22dp"
+            android:text="LOGIN"
+            android:textColor="#ff0000" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
