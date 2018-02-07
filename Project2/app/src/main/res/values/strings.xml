@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Project2</string>
+    <string name="bttnUNText">USERNAME</string>
+    <string name="UNActivity_name">launchUNActivity</string>
+    <string name="text_header">The username is</string>
+    <string name="editText_userName">Enter Username</string>
+    <string name="editText_passWord">Enter Password</string>
+    <string name="text_header2">The password is</string>
+    <string name="login_activity_name">loginActivity</string>
 </resources>

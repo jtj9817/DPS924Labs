@@ -9,12 +9,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".userNameDisplay"
+            android:label="@string/UNActivity_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.josh.project2.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".passWordDisplay"
+            android:label="launchPWActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.josh.project2.MainActivity" />
+        </activity>
+
+        <activity android:name=".loginDisplay" android:label="@string/login_activity_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.josh.project2.MainActivity" />
         </activity>
     </application>
 
