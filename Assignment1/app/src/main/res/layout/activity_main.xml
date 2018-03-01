@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jtjadulco.assignment1.MainActivity">
+
+    <TextView
+        android:id="@+id/nameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#0000ff"
+        android:text="NAME: JOSHUA JADULCO"
+        android:textColor="#ffff00"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hiHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nameHeader"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:text="Hi"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/namesRGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/hiHeader"
+        android:layout_below="@+id/hiHeader"
+        android:layout_marginTop="19dp"
+        android:onClick="displayToastName">
+
+
+        <RadioButton
+            android:id="@+id/radioAlice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Alice"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioBob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Bob"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioCarol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Carol"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/hiBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/namesRGroup1"
+        android:layout_centerVertical="true"
+        android:text="Say Hi"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtViewNameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/namesRGroup1"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/hiHeader"
+        android:text="World"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/namesRGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nameHeader"
+        android:layout_alignTop="@+id/namesRGroup1"
+        android:layout_marginEnd="1dp">
+
+
+        <RadioButton
+            android:id="@+id/radioDave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Dave"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioEve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Eve"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioFred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Fred"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/helloHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/namesRGroup2"
+        android:layout_alignTop="@+id/txtViewNameDisplay"
+        android:text="Hello"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/helloBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/namesRGroup2"
+        android:layout_alignTop="@+id/hiBttn"
+        android:text="SAY HELLO"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtViewNameDisplay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/helloHeader"
+        android:layout_marginStart="2dp"
+        android:layout_toEndOf="@+id/helloHeader"
+        android:text="Seneca"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
