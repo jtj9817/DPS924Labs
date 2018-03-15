@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00e600"
+    tools:context="com.example.josh.lab6.MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/name"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/IDTView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="15dp"
+        android:text="ID"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/NameTView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/IDTView"
+        android:layout_marginTop="26dp"
+        android:text="Name"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/GradeTView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/NameTView"
+        android:layout_marginTop="26dp"
+        android:text="Grade"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/studentIdField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/studentNameField"
+        android:layout_alignTop="@+id/IDTView"
+        android:ems="10"
+        android:hint="Enter Student ID"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/studentNameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/NameTView"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/studentGradeField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/studentNameField"
+        android:layout_alignTop="@+id/GradeTView"
+        android:ems="10"
+        android:hint="Enter Grade"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addStdntBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="ADD STUDENT" />
+
+    <Button
+        android:id="@+id/viewStdntBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/addStdntBttn"
+        android:text="VIEW STUDENT" />
+
+    <Button
+        android:id="@+id/findStdntBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/viewStdntBttn"
+        android:text="FIND STUDENT" />
+
+    <Button
+        android:id="@+id/deleteStdntBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/findStdntBttn"
+        android:text="DELETE STUDENT" />
+
+</RelativeLayout>
