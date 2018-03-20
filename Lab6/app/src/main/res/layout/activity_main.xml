@@ -66,16 +66,6 @@
         android:hint="Enter Name"
         android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/studentGradeField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/studentNameField"
-        android:layout_alignTop="@+id/GradeTView"
-        android:ems="10"
-        android:hint="Enter Grade"
-        android:inputType="textPersonName" />
-
     <Button
         android:id="@+id/addStdntBttn"
         android:layout_width="wrap_content"
@@ -107,5 +97,15 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/findStdntBttn"
         android:text="DELETE STUDENT" />
+
+    <EditText
+        android:id="@+id/studentGradeField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/studentNameField"
+        android:layout_alignTop="@+id/GradeTView"
+        android:ems="10"
+        android:hint="Enter Grade"
+        android:inputType="number" />
 
 </RelativeLayout>
