@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josh.lab7.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#0066ff"
+        android:text="NAME: JOSHUA JADULCO"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:background="#00cc66"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/eTextTeamCaptain1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Captain"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/eTextTeam1Member1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Member 1"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/eTextTeam1Member2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Member 2"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEAM 1"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bttnAddTeam1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Team 1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:background="#ffff66"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/eTextTeamCaptain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Captain "
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/eTextTeam2Member1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Member 1"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/eTextTeam2Member2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Member 2"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEAM 2"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bttnAddTeam2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Team 2" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:background="#3399ff">
+
+        <Button
+            android:id="@+id/bttnViewTeams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="VIEW ADDED TEAMS" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
