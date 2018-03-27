@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.josh.lab7">
+    package="com.example.josh.assignment3">
 
     <application
         android:allowBackup="true"
@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListActivityFragment" />
-        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".TeamAdd"></activity>
+        <activity android:name=".TeamDetails"></activity>
     </application>
 
 </manifest>

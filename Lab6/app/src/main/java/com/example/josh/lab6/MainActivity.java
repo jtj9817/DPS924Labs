@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 StringBuffer studentsNames = new StringBuffer();
+
                 String stdntName = studentName.getText().toString();
                 String stdntID = studentID.getText().toString();
                 String stdntGrade = studentGrade.getText().toString();
