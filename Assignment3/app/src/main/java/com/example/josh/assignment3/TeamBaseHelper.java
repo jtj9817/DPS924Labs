@@ -1,6 +1,7 @@
 package com.example.josh.assignment3;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -16,7 +17,7 @@ public class TeamBaseHelper extends SQLiteOpenHelper{
                     TeamDbSchema.TeamsTable.Cols._ID + " INTEGER PRIMARY KEY," +
                     TeamDbSchema.TeamsTable.Cols.COLUMN_NAME_CITY + " TEXT," +
                     TeamDbSchema.TeamsTable.Cols.COLUMN_NAME_SPORT + " TEXT," +
-                    TeamDbSchema.TeamsTable.Cols.COLUMN_NAME_TEAMNAME+ " TEXT," +
+                    TeamDbSchema.TeamsTable.Cols.COLUMN_NAME_TEAMNAME + " TEXT," +
                     TeamDbSchema.TeamsTable.Cols.COLUMN_NAME_MVP + " TEXT," +
                     TeamDbSchema.TeamsTable.Cols.COLUMN_NAME_STADIUM + " TEXT)";
 
@@ -35,5 +36,11 @@ public class TeamBaseHelper extends SQLiteOpenHelper{
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL(SQL_DELETE_ENTRIES);
         onCreate(db);
+    }
+
+    public Cursor getTeamNames(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor teamList = db.rawQuery("SELECT * FROM " + TeamDbSchema.TeamsTable.Cols.TABLE_NAME, null);
+        return teamList;
     }
 }

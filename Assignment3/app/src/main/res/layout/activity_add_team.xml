@@ -79,43 +79,43 @@ android:background="#00ccff">
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView6"
         android:layout_alignBottom="@+id/textView6"
-        android:layout_alignStart="@+id/eTxtTeamName2"
+        android:layout_alignStart="@+id/eTxtTeamName"
         android:ems="10"
         android:hint="City Name"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/eTxtTeamName2"
+        android:id="@+id/eTxtTeamName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/eTxtSportCategory2"
+        android:layout_alignStart="@+id/eTxtSportCategory"
         android:layout_alignTop="@+id/textView7"
         android:ems="10"
         android:hint="Team Name"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/eTxtSportCategory2"
+        android:id="@+id/eTxtSportCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/eTxtMVP2"
+        android:layout_alignStart="@+id/eTxtMVP"
         android:layout_alignTop="@+id/textView8"
         android:ems="10"
         android:hint="Sport Category"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/eTxtMVP2"
+        android:id="@+id/eTxtMVP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/eTxtStadium2"
+        android:layout_alignStart="@+id/eTxtStadium"
         android:layout_alignTop="@+id/textView9"
         android:ems="10"
         android:hint="Team MVP"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/eTxtStadium2"
+        android:id="@+id/eTxtStadium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView10"
@@ -138,7 +138,7 @@ android:background="#00ccff">
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/exitBttn2"
+        android:id="@+id/exitBttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/submitBttn"
